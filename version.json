@@ -1,0 +1,133 @@
+{
+    "project": {
+        "name": "医疗器械文档处理工具集",
+        "name_en": "Medical Device Document Processor",
+        "version": "1.0.0",
+        "build_date": "2024-09-24",
+        "description": "集成了多种医疗器械文档处理功能的综合工具，支持ZIP解压、文件夹清理、文件夹提取、Word转PDF和文件重命名等操作"
+    },
+    "modules": {
+        "main_gui": {
+            "name": "主程序界面",
+            "version": "1.0.0",
+            "description": "基于Tkinter的图形用户界面，支持自动化流程和单独功能执行"
+        },
+        "analyze_zip_encoding": {
+            "name": "ZIP文件解压",
+            "version": "1.0.0",
+            "description": "自动解压ZIP文件，正确处理中文编码问题"
+        },
+        "clean_folder": {
+            "name": "文件夹清理",
+            "version": "1.0.0",
+            "description": "清理文件夹，只保留材料包文件夹，删除临时文件"
+        },
+        "extract_folders": {
+            "name": "文件夹提取",
+            "version": "1.0.0",
+            "description": "根据JSON模板提取指定文件夹到output目录"
+        },
+        "final_word_to_pdf": {
+            "name": "Word转PDF",
+            "version": "1.0.0",
+            "description": "批量转换Word文件为PDF格式，支持.doc和.docx"
+        },
+        "universal_rename": {
+            "name": "文件重命名",
+            "version": "1.0.0",
+            "description": "根据模板为文件添加标识标签，支持多种文件类型识别"
+        }
+    },
+    "dependencies": {
+        "python": ">=3.7",
+        "tkinter": "built-in",
+        "pywin32": ">=227",
+        "pathlib2": ">=2.3.0",
+        "pyinstaller": ">=4.10"
+    },
+    "features": {
+        "gui_interface": "现代化Tkinter图形界面",
+        "real_time_logging": "实时操作日志显示",
+        "multi_threading": "多线程处理，避免界面卡顿",
+        "automation_workflow": "完整自动化流程和自定义流程",
+        "template_system": "可配置的JSON模板系统",
+        "chinese_encoding": "完善的中文编码处理",
+        "error_handling": "健壮的错误处理机制",
+        "exe_packaging": "支持打包为独立exe文件"
+    },
+    "file_structure": {
+        "core_files": [
+            "main_gui.py",
+            "analyze_zip_encoding.py",
+            "clean_folder.py",
+            "extract_folders.py",
+            "final_word_to_pdf.py",
+            "universal_rename.py"
+        ],
+        "tools": [
+            "run_gui.py",
+            "start.bat",
+            "build_exe.py",
+            "build.bat",
+            "test_environment.py"
+        ],
+        "templates": [
+            "template/folder_templates/",
+            "template/rename_templates/"
+        ],
+        "data_dirs": [
+            "data/",
+            "output/"
+        ],
+        "docs": [
+            "README.md",
+            "INSTALL.md",
+            "使用指南.md"
+        ]
+    },
+    "usage_modes": {
+        "full_automation": "完整自动化流程：ZIP解压 → 文件夹清理 → 文件夹提取 → Word转PDF → 文件重命名",
+        "custom_workflow": "自定义流程：用户选择需要的处理步骤",
+        "individual_functions": "单独功能：只执行某个特定操作"
+    },
+    "supported_formats": {
+        "input": [
+            "ZIP压缩文件",
+            "Word文档(.doc, .docx)",
+            "PDF文件",
+            "医疗器械申报文件夹结构"
+        ],
+        "output": [
+            "整理后的文件夹结构",
+            "PDF文档",
+            "重命名后的文件",
+            "提取的目标文件夹"
+        ]
+    },
+    "target_users": {
+        "primary": "医疗器械注册申报人员",
+        "secondary": "文档处理和整理人员",
+        "use_cases": [
+            "医疗器械注册申报材料整理",
+            "批量文档格式转换",
+            "文件夹结构标准化",
+            "文件重命名和标签添加"
+        ]
+    },
+    "system_requirements": {
+        "os": "Windows 7/8/10/11",
+        "python": "Python 3.7+（开发环境）",
+        "memory": "≥2GB RAM",
+        "disk": "≥100MB可用空间",
+        "additional": "Microsoft Word（用于Word转PDF功能）"
+    },
+    "build_info": {
+        "integration_date": "2024-09-24",
+        "integration_status": "完成",
+        "test_status": "通过",
+        "modules_integrated": 5,
+        "total_lines": "约2000+行代码",
+        "gui_framework": "Tkinter",
+        "packaging_tool": "PyInstaller"
+    }
+}
