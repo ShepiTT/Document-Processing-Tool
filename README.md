@@ -73,7 +73,7 @@ python build_exe_optimized.py
 
 ## 📄 License
 
-MIT License
+This project is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). You may use it for personal, educational, and noncommercial purposes. Commercial use is not permitted.
 
 ## 👤 作者
 
